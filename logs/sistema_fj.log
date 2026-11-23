@@ -1,0 +1,50 @@
+2026-11-22 19:36:14 | INFO     | gestor:21 | Sistema Software FJ inicializado correctamente en memoria.
+2026-11-22 19:36:14 | INFO     | gestor:34 | Cliente registrado exitosamente: Cliente[F85A6571] Andrés Pimentel (Doc: 1020304050 | Email: andres@softwarefj.com)
+2026-11-22 19:36:14 | INFO     | gestor:34 | Cliente registrado exitosamente: Cliente[708A7D9E] Laura Gómez (Doc: 987654321 | Email: laura.gomez@empresa.co)
+2026-11-22 19:36:14 | ERROR    | gestor:30 | [ERR-DATOS] Fallo al registrar cliente: Documento inválido '123': debe ser numérico y tener al menos 6 dígitos.
+2026-11-22 19:36:14 | ERROR    | gestor:30 | [ERR-DATOS] Fallo al registrar cliente: Ya existe un cliente registrado con documento 1020304050.
+2026-11-22 19:36:14 | INFO     | gestor:45 | Servicio agregado al catálogo: Servicio[789AD61C] Sala Innovación A | Tarifa: $80,000.00/h | Disponible | Capacidad: 10 pers.
+2026-11-22 19:36:14 | DEBUG    | gestor:52 | Auditoría registro de servicio finalizada (Estado: EXITOSA).
+2026-11-22 19:36:14 | INFO     | gestor:45 | Servicio agregado al catálogo: Servicio[24367883] Servidor Dell PowerEdge | Tarifa: $50,000.00/h | Disponible | Equipo: Servidores (Garantía: $100,000.00)
+2026-11-22 19:36:14 | DEBUG    | gestor:52 | Auditoría registro de servicio finalizada (Estado: EXITOSA).
+2026-11-22 19:36:14 | INFO     | gestor:45 | Servicio agregado al catálogo: Servicio[5D27F225] Arquitectura AWS & Docker | Tarifa: $120,000.00/h | Disponible | Área: Cloud & DevOps (Arquitecto)
+2026-11-22 19:36:14 | DEBUG    | gestor:52 | Auditoría registro de servicio finalizada (Estado: EXITOSA).
+2026-11-22 19:36:14 | ERROR    | main:39 | [ERR-DATOS] Instanciación directa bloqueada: La tarifa base (-5000) debe ser un número positivo mayor a cero.
+2026-11-22 19:36:14 | INFO     | gestor:79 | Reserva confirmada: Reserva[2AE396AD] Estado: CONFIRMADA | Cliente: Andrés Pimentel | Servicio: Sala Innovación A (4h) | Total: $358,785.00
+2026-11-22 19:36:14 | DEBUG    | gestor:82 | Total reservas activas en memoria: 1
+2026-11-22 19:36:14 | ERROR    | gestor:73 | [ERR-RESV] No se pudo completar la reserva solicitada: El servicio 'Sala Innovación A' no está disponible actualmente. | Causa raíz: ServicioNoDisponibleError
+2026-11-22 19:36:14 | DEBUG    | gestor:82 | Total reservas activas en memoria: 1
+2026-11-22 19:36:14 | ERROR    | gestor:73 | [ERR-RESV] No se pudo completar la reserva solicitada: Duración inválida (-3h): debe ser un entero positivo. | Causa raíz: ReservaInvalidaError
+2026-11-22 19:36:14 | DEBUG    | gestor:82 | Total reservas activas en memoria: 1
+2026-11-22 19:36:14 | ERROR    | gestor:73 | [ERR-RESV] No se pudo completar la reserva solicitada: Porcentaje de descuento fuera de rango (0-100): 150.0 | Causa raíz: CalculoInconsistenteError
+2026-11-22 19:36:14 | DEBUG    | gestor:82 | Total reservas activas en memoria: 1
+2026-11-22 19:36:14 | INFO     | gestor:93 | Reserva 2AE396AD ejecutada con éxito. Total facturado: $358,785.00
+2026-11-22 19:36:14 | ERROR    | gestor:102 | [ERR-OPER] Error cancelando reserva: Imposible cancelar una reserva en estado 'PROCESADA'.
+2026-11-22 19:36:14 | INFO     | gestor:79 | Reserva confirmada: Reserva[07D63EF4] Estado: CONFIRMADA | Cliente: Laura Gómez | Servicio: Arquitectura AWS & Docker (3h) | Total: $916,300.00
+2026-11-22 19:36:14 | DEBUG    | gestor:82 | Total reservas activas en memoria: 2
+2026-11-22 19:36:14 | WARNING  | gestor:104 | Reserva[07D63EF4] CANCELADA. Motivo: Reprogramación de sprint del cliente
+2026-11-22 19:36:24 | INFO     | gestor:21 | Sistema Software FJ inicializado correctamente en memoria.
+2026-11-22 19:36:24 | INFO     | gestor:34 | Cliente registrado exitosamente: Cliente[24B51847] Andrés Pimentel (Doc: 1020304050 | Email: andres@softwarefj.com)
+2026-11-22 19:36:24 | INFO     | gestor:34 | Cliente registrado exitosamente: Cliente[B5F9F7D4] Laura Gómez (Doc: 987654321 | Email: laura.gomez@empresa.co)
+2026-11-22 19:36:24 | ERROR    | gestor:30 | [ERR-DATOS] Fallo al registrar cliente: Documento inválido '123': debe ser numérico y tener al menos 6 dígitos.
+2026-11-22 19:36:24 | ERROR    | gestor:30 | [ERR-DATOS] Fallo al registrar cliente: Ya existe un cliente registrado con documento 1020304050.
+2026-11-22 19:36:24 | INFO     | gestor:45 | Servicio agregado al catálogo: Servicio[8833FA1B] Sala Innovación A | Tarifa: $80,000.00/h | Disponible | Capacidad: 10 pers.
+2026-11-22 19:36:24 | DEBUG    | gestor:52 | Auditoría registro de servicio finalizada (Estado: EXITOSA).
+2026-11-22 19:36:24 | INFO     | gestor:45 | Servicio agregado al catálogo: Servicio[D413AF45] Servidor Dell PowerEdge | Tarifa: $50,000.00/h | Disponible | Equipo: Servidores (Garantía: $100,000.00)
+2026-11-22 19:36:24 | DEBUG    | gestor:52 | Auditoría registro de servicio finalizada (Estado: EXITOSA).
+2026-11-22 19:36:24 | INFO     | gestor:45 | Servicio agregado al catálogo: Servicio[4317D3E2] Arquitectura AWS & Docker | Tarifa: $120,000.00/h | Disponible | Área: Cloud & DevOps (Arquitecto)
+2026-11-22 19:36:24 | DEBUG    | gestor:52 | Auditoría registro de servicio finalizada (Estado: EXITOSA).
+2026-11-22 19:36:24 | ERROR    | main:39 | [ERR-DATOS] Instanciación directa bloqueada: La tarifa base (-5000) debe ser un número positivo mayor a cero.
+2026-11-22 19:36:24 | INFO     | gestor:79 | Reserva confirmada: Reserva[4088EB3F] Estado: CONFIRMADA | Cliente: Andrés Pimentel | Servicio: Sala Innovación A (4h) | Total: $358,785.00
+2026-11-22 19:36:24 | DEBUG    | gestor:82 | Total reservas activas en memoria: 1
+2026-11-22 19:36:24 | ERROR    | gestor:73 | [ERR-RESV] No se pudo completar la reserva solicitada: El servicio 'Sala Innovación A' no está disponible actualmente. | Causa raíz: ServicioNoDisponibleError
+2026-11-22 19:36:24 | DEBUG    | gestor:82 | Total reservas activas en memoria: 1
+2026-11-22 19:36:24 | ERROR    | gestor:73 | [ERR-RESV] No se pudo completar la reserva solicitada: Duración inválida (-3h): debe ser un entero positivo. | Causa raíz: ReservaInvalidaError
+2026-11-22 19:36:24 | DEBUG    | gestor:82 | Total reservas activas en memoria: 1
+2026-11-22 19:36:24 | ERROR    | gestor:73 | [ERR-RESV] No se pudo completar la reserva solicitada: Porcentaje de descuento fuera de rango (0-100): 150.0 | Causa raíz: CalculoInconsistenteError
+2026-11-22 19:36:24 | DEBUG    | gestor:82 | Total reservas activas en memoria: 1
+2026-11-22 19:36:24 | INFO     | gestor:93 | Reserva 4088EB3F ejecutada con éxito. Total facturado: $358,785.00
+2026-11-22 19:36:24 | ERROR    | gestor:102 | [ERR-OPER] Error cancelando reserva: Imposible cancelar una reserva en estado 'PROCESADA'.
+2026-11-22 19:36:24 | INFO     | gestor:79 | Reserva confirmada: Reserva[FC061D9E] Estado: CONFIRMADA | Cliente: Laura Gómez | Servicio: Arquitectura AWS & Docker (3h) | Total: $916,300.00
+2026-11-22 19:36:24 | DEBUG    | gestor:82 | Total reservas activas en memoria: 2
+2026-11-22 19:36:24 | WARNING  | gestor:104 | Reserva[FC061D9E] CANCELADA. Motivo: Reprogramación de sprint del cliente
